@@ -1,7 +1,12 @@
 package core.basesyntax;
 
 public class MainApp {
+
     public static void main(String[] args) {
-        System.out.println("Valid solution");
+        Machine[] machines = {new Bulldozer(), new Excavator(), new Truck()};
+        for (Machine machine : machines) {
+            machine.doWork();
+            machine.stopWork();
+        }
     }
 }
